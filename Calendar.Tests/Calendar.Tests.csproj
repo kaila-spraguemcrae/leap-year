@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" /><!--imports functionality to set up and build our testing environment-->
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2" /><!--will run our tests for us-->
+    <PackageReference Include="MSTest.TestFramework" Version="1.2" /><!--allows us to create test classes and methods and to use other build-in code to construct tests-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calendar\Calendar.csproj" />
+  </ItemGroup>
+
+</Project>
